@@ -38,7 +38,13 @@
 
 /* Dark gray background for the header and footer.*/
 .zoneHeader1, .zoneFooter3 {
-  background-color: #303030;
+  background: #303030;
+}
+
+/* Links */
+
+a, a:visited {
+  color: #1694d9;
 }
 
 /* Homepage styles */
@@ -76,6 +82,7 @@
   position: absolute;
   top: 80%;
   width: 100%;
+  font-weight: lighter;
 }
 
 .home-down-caret {
@@ -111,7 +118,7 @@
 }
 
 .home-text-overlay {
-  background-color: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.5);
   padding: 10px 80px;
 }
 

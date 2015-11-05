@@ -1,29 +1,79 @@
-/* Hide ads */
-.zoneBanner {
-  display:none;
+/**
+ * Overrides for the clean_lines_marine_green.v3.1 theme
+ */
+
+/* First few sets of styles here have to do with essentially
+ * resetting some of the theme's layout styling */
+
+/* Each "zone" defined by the theme's CSS enforces centered
+ * container with a maxiumum width.  Instead, we want to
+ * allow for usage of the entire width of the viewport, so
+ * first thing we do is reset the main containers */
+.zoneHeader1 > .container_12,
+.zoneHeader1 > .container_12 > .s1_grid_12,
+.zoneHeader2 > .container_12,
+.zoneHeader2 > .container_12 > .s1_grid_12,
+.zoneHeader3 > .container_12,
+.zoneHeader3 > .container_12 > .s1_grid_12,
+.zoneHeader4 > .container_12,
+.zoneHeader4 > .container_12 > .s1_grid_12,
+.zoneContent > .container_12,
+.zoneContent> .container_12 > .s1_grid_12 {
+  width: 100%;
+  margin: 0;
 }
 
-.WaLayoutTable {
-  height: 100%;
-}
-
+/* Remove theme's place holder padding */
 .WaPlaceHolder > div {
   padding: 0;
+}
+
+/* Remove each zone's background images and colors */
+.zoneHeader1, .zoneHeader2,
+.zoneHeader3, .zoneHeader4,
+.zoneContent, .zoneFooter1,
+.zoneFooter2, .zoneFooter3 {
+  background: none;
+}
+
+/* Dark gray background for the header and footer.*/
+.zoneHeader1, .zoneFooter3 {
+  background-color: #303030;
+}
+
+/* Homepage styles */
+
+/* zoneHeader1:
+ * Contains a single layout w/a the argyle cover image,
+ * 100% of viewport and relatively positioned with
+ * all other components absolutely-positioned over it. */
+.argyle-splash {
+  position: relative;
+  height: 100vh;
+  background: url(/resources/Pictures/Zoom/home/argyle_splash.png) center top no-repeat;
+  background-size: cover;
+}
+
+/* Needed this to get the home page's absolutely-positioned
+ * components to look right. */
+.argyle-splash .WaLayoutTable,
+.argyle-splash .WaLayoutTable tbody,
+.argyle-splash .WaLayoutTable tr,
+.argyle-splash .WaLayoutTable td {
+  height: 100%;
 }
 
 .home-header {
   position: absolute;
   top: 25px;
+  margin: 0px 10px;
   width: 100%;
-}
-
-.home-header [class^="WaGadget"] {
-  margin: 0px;
 }
 
 .home-tagline {
   position: absolute;
   top: 80%;
+  width: 100%;
 }
 
 .home-down-caret {
@@ -32,10 +82,21 @@
   width: 100%;
 }
 
+/* zoneHeader2:
+ * "Why Join?" cover image */
 .home-cover-why-join {
   background: url(/resources/Pictures/Zoom/home/whyjoin.png) center top no-repeat;
   background-size:cover;
   min-height: 1000px;
+}
+
+/* General styling for homepage components */
+
+/* Resetting of gadget margins for the various components */
+.home-header [class^="WaGadget"],
+.home-text-overlay [class^="WaGadget"],
+.home-quote [class^="WaGadget"] {
+  margin: 0px;
 }
 
 .home-cover-img {
@@ -50,8 +111,9 @@
   padding: 10px 80px;
 }
 
-.home-text-overlay [class^="WaGadget"] {
-  margin: 0px;
+.home-text-overlay p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 .home-quote {
@@ -59,7 +121,6 @@
 }
 
 .home-quote [class^="WaGadget"] {
-  margin: 0px;
   display: inline-block;
   vertical-align: top;
 }
@@ -69,78 +130,22 @@
   float: left;
 }
 
-.home-text-overlay p {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
 
-.zoneHeader1 {
-  background: transparent;
-  background-color: #303030;
-}
-
-.zoneHeader1 .argyle-splash {
-  position: relative;
-  height: 100vh;
-  background: url(/resources/Pictures/Zoom/home/argyle_splash.png) center top no-repeat;
-  background-size: cover;
-}
-
-.zoneHeader2,
-.zoneHeader3,
-.zoneHeader4 {
-  background: transparent;
-}
-
-.zoneHeader2 > .container_12,
-.zoneHeader2 > .container_12 > .s1_grid_12,
-.zoneHeader3 > .container_12,
-.zoneHeader3 > .container_12 > .s1_grid_12,
-.zoneHeader4 > .container_12,
-.zoneHeader4 > .container_12 > .s1_grid_12,
-.zoneContent > .container_12,
-.zoneContent> .container_12 > .s1_grid_12 {
-  width: 100%;
-  margin: 0;
-}
-
-.zoneContent {}
-
-.zoneFooter1 {}
-
-.zoneFooter2 {}
-
-.zoneFooter3 {
-  background-color: #303030;
-}
-
-@media only screen and (min-width : 320px) and (max-width : 985px) {
-  .zoneHeader1 .argyle-splash tbody,
-  .zoneHeader1 .argyle-splash tr,
-  .zoneHeader1 .argyle-splash td {
-    height: 100%;
-  }
-
-  .home-tagline {
-    position: absolute;
-    top: 78%;
-  }
-
+/* For all mobile devices, change cover images from
+ * fixed to scroll (iOS devices seem to have trouble
+ * with fixed, cover images */
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
   .home-cover-img {
     background-attachment: scroll;
   }
-.zoneFooter1 {
-
-    background-attachment: scroll;
-
-}
 }
 
-
-@media only screen and (max-width: 617px) {
-  .home-header {
-    top: 10px;
-  }
+/*
+ * Override of a media tag for the theme which forces the
+ * header table on the home page to continue to be a full-width
+ * collection of inline-block elements.
+ */
+@media only screen and (max-width: 616px) {
   .home-header .WaLayoutTable .WaLayoutRow .WaLayoutItem {
     display: inline-block;
     width: 33% !important;
@@ -150,10 +155,34 @@
   }
 }
 
+/* For wider-width devices (e.g. landscape mode) */
 @media only screen and (max-width: 680px) {
+  /* Basic positioning of the absolutely-positioned
+   * elements over the argyle splash... */
+  .home-header {
+    top: 10px;
+  }
+
+  .home-tagline {
+    position: absolute;
+    top: 78%;
+  }
+
+  .home-tagline font {
+    font-size: 24px !important;
+  }
+
+  /* Shrinking of "why join?" image */
   .home-cover-why-join {
     min-height: 450px;
   }
+
+  /* Positional changes for the quotes, text, background images */
+  .home-quote {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .zoneHeader3 .home-cover-img {
     min-height: 1500px;
   }
@@ -161,15 +190,13 @@
   .zoneHeader4 .home-cover-img {
     min-height: 1000px;
   }
-  
-  .home-quote {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
 }
 
+/* For narrower-width devices (e.g. portrait mode) */
 @media only screen and (min-width : 320px) and (max-width : 450px) {
-  .zoneHeader1 .argyle-splash {
+  /* Swap out argyle splash and "why join?" images
+   * for mobile-friendly versions... */
+  .argyle-splash {
     background: url(/resources/Pictures/Zoom/home/argyle_splash_mobile.png);
     background-size: cover;
     background-position: 0px -40px;
@@ -177,9 +204,16 @@
   }
 
   .home-cover-why-join {
-    background: url(/resources/Pictures/Zoom/home/whyjoin_mobile_vertical.png) center top no-repeat;
-    background-size:cover;
+    background: url(/resources/Pictures/Zoom/home/whyjoin_mobile_vertical.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     min-height: 650px;
+  }
+
+  /* Positional changes for the quotes, text, background images */
+  .home-text-overlay {
+    padding: 10px 20px;
   }
 
   .zoneHeader3 .home-cover-img {
@@ -189,10 +223,4 @@
   .zoneHeader4 .home-cover-img {
     min-height: 1200px;
   }
-
-  .home-text-overlay {
-    padding: 10px 20px;
-  }
-
 }
-

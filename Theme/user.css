@@ -50,8 +50,11 @@
 .argyle-splash {
   position: relative;
   height: 100vh;
-  background: url(/resources/Pictures/Zoom/home/argyle_splash.png) center top no-repeat;
+  background: url(/resources/Pictures/Zoom/home/argyle_splash.png);
   background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0 15px;
 }
 
 /* Needed this to get the home page's absolutely-positioned
@@ -66,7 +69,6 @@
 .home-header {
   position: absolute;
   top: 25px;
-  margin: 0px 10px;
   width: 100%;
 }
 
@@ -85,8 +87,10 @@
 /* zoneHeader2:
  * "Why Join?" cover image */
 .home-cover-why-join {
-  background: url(/resources/Pictures/Zoom/home/whyjoin.png) center top no-repeat;
+  background: url(/resources/Pictures/Zoom/home/whyjoin.png);
   background-size:cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   min-height: 1000px;
 }
 
@@ -131,9 +135,8 @@
 }
 
 
-/* For all mobile devices, change cover images from
- * fixed to scroll (iOS devices seem to have trouble
- * with fixed, cover images */
+/* For all mobile devices, change cover images from fixed to scroll
+ * (iOS devices seem to have trouble with fixed, cover images) */
 @media only screen and (min-width : 320px) and (max-width : 1024px) {
   .home-cover-img {
     background-attachment: scroll;
@@ -141,9 +144,8 @@
 }
 
 /*
- * Override of a media tag for the theme which forces the
- * header table on the home page to continue to be a full-width
- * collection of inline-block elements.
+ * Override of a media tag for the theme which forces the header table on the
+ * home page to continue to be a full-width collection of inline-block elements.
  */
 @media only screen and (max-width: 616px) {
   .home-header .WaLayoutTable .WaLayoutRow .WaLayoutItem {

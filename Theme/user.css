@@ -18,7 +18,9 @@
 .zoneHeader4 > .container_12,
 .zoneHeader4 > .container_12 > .s1_grid_12,
 .zoneContent > .container_12,
-.zoneContent> .container_12 > .s1_grid_12 {
+.zoneContent> .container_12 > .s1_grid_12,
+.zoneFooter3 > .container_12,
+.zoneFooter3> .container_12 > .s1_grid_12 {
   width: 100%;
   margin: 0;
 }
@@ -141,6 +143,61 @@ a, a:visited {
   float: left;
 }
 
+/* Styling for join-us wizard */
+
+.WaGadgetMembershipApplication .fieldSubContainer .singleStringContainer,
+.WaGadgetMembershipApplication .formTitleOuterContainer {
+  margin: 0px;
+}
+
+.navigationOuterContainer {
+  margin: 0px;
+}
+
+/* Wizard button styling */
+.zoom-button {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 12px;
+  border-radius: 12px;
+  background: #303030;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.zoom-button:visited {
+  color: #ffffff;
+}
+
+.navigationOuterContainer .navigationContainer .left input.nextButton,
+.navigationOuterContainer .navigationContainer .left input.typeButton,
+.navigationOuterContainer .navigationContainer .left input[type=submit],
+.navigationOuterContainer .navigationContainer .right input.nextButton,
+.navigationOuterContainer .navigationContainer .right input.typeButton,
+.navigationOuterContainer .navigationContainer .right input[type=submit] {
+  background: #303030;
+  color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.navigationOuterContainer .navigationContainer .left input.nextButton:hover,
+.navigationOuterContainer .navigationContainer .left input.typeButton:hover,
+.navigationOuterContainer .navigationContainer .left input[type=submit]:hover,
+.navigationOuterContainer .navigationContainer .right input.nextButton:hover,
+.navigationOuterContainer .navigationContainer .right input.typeButton:hover,
+.navigationOuterContainer .navigationContainer .right input[type=submit]:hover,
+.zoom-button:hover {
+  background: #FF9600;
+  text-decoration: none;
+  color: #FFF;
+}
 
 /* For all mobile devices, change cover images from fixed to scroll
  * (iOS devices seem to have trouble with fixed, cover images) */

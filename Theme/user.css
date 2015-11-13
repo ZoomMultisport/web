@@ -154,6 +154,38 @@ a, a:visited {
   margin: 0px;
 }
 
+/* General button styling
+ * Ghost buttons...
+ * (see http://cdn.sixrevisions.com/0468-01-css-ghost-buttons/index.html) */
+input[type="button"],
+input[type="submit"],
+input[type="submitButton"],
+.commonMessageBox .buttons input.button {
+  background: #efefef;
+  border-radius: 10px;
+  border-color: #303030;
+  color: #303030;
+  font: 14px 'Open sans';
+  font-weight: bold;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+input[type="button"]:hover,
+input[type="button"]:active,
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submitButton"]:hover,
+input[type="submitButton"]:active,
+.commonMessageBox .buttons input.button:hover,
+.commonMessageBox .buttons input.button:active {
+  background: #FF9600;
+  color: #fff;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
 /* Wizard button styling */
 .zoom-button {
   display: block;
@@ -173,6 +205,16 @@ a, a:visited {
 
 .zoom-button:visited {
   color: #ffffff;
+}
+
+.navigationTopContainer {
+  margin-bottom: 15px;
+}
+
+/* I dunno what this thing is but it produced an empty green box
+ * during the sign-up workflow... */
+.captionOuterContainer {
+  display: none;
 }
 
 .navigationOuterContainer .navigationContainer .left input.nextButton,
@@ -198,6 +240,46 @@ a, a:visited {
   text-decoration: none;
   color: #FFF;
 }
+
+.infoOuterContainer {
+  background: #FF9600;
+  color: #303030;
+  border-radius: 12px;
+}
+
+.confirmWindowInfo .cww3,
+.confirmWindowInfo .cww4,
+.confirmWindowInfo .cww-inner {
+  background: #FF9600;
+  color: #303030;
+  border-color: #303030;
+}
+
+/* Table styles */
+.genericListTable thead th,
+.membersTable thead th {
+  background: #303030;
+  color: #FF9600;
+  font-family: 'Fjalla One';
+}
+
+.genericListTable tr:hover td,
+.membersTable tr:hover td {
+  background: #efefef;
+}
+
+.genericListTable th.firstTh,
+.genericListTable thead th:first-child,
+.membersTable thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.genericListTable th.lastTh,
+.genericListTable thead th.right,
+.membersTable thead th.right {
+  border-top-right-radius: 10px;
+}
+
 
 /* For all mobile devices, change cover images from fixed to scroll
  * (iOS devices seem to have trouble with fixed, cover images) */

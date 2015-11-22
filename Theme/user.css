@@ -80,6 +80,30 @@ a, a:visited {
   width: 100%;
 }
 
+.join-button {
+  display: inline-block;
+  float: right;
+}
+
+.memberContentView .join-button {
+  display: none;
+}
+
+.memberContentView .WaGadgetLoginButton {
+  display: inline-block;
+  float: right;
+}
+
+.memberContentView .WaGadgetLoginButton a {
+  color: #fff;
+}
+
+.memberContentView .WaGadgetLoginButton a:hover {
+  text-decoration: none;
+  color: #FD8208;
+  transition: color 0.2s ease-out;
+}
+
 .home-tagline {
   position: absolute;
   top: 80%;
@@ -184,6 +208,29 @@ input[type="submitButton"]:active,
   color: #fff;
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
+}
+
+/* Homepage learn more button */
+.learn-more-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  font-family: 'Fjalla One';
+  font-size: 36px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.learn-more-button:hover, .learn-more-button:active {
+  background-color: #fff;
+  color: #FD8208;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 /* Wizard button styling */

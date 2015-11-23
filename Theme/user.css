@@ -89,7 +89,7 @@ a, a:visited {
   display: none;
 }
 
-.memberContentView .WaGadgetLoginButton {
+.WaGadgetLoginButton {
   display: inline-block;
   float: right;
 }

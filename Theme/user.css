@@ -43,10 +43,19 @@
   background: #303030;
 }
 
+/* Light gray background for content */
+.zoneContent {
+  background: #fafafa;
+}
+
 /* Links */
 
 a, a:visited {
   color: #1694d9;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* Homepage styles */
@@ -327,6 +336,30 @@ input[type="submitButton"]:active,
   border-top-right-radius: 10px;
 }
 
+/* Member Dashboard styles */
+.members-only-container .WaLayoutItem {
+  vertical-align: middle;
+}
+
+.members-only-link a {
+  display: table;
+}
+
+.members-only-link img {
+  display: table-cell;
+  vertical-align: middle;
+  height: 75px;
+  width: 75px;
+  float: left;
+  margin-right: 10px;
+}
+
+.members-only-link span {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Fjalla One';
+  font-size: 24px;
+}
 
 /* For all mobile devices, change cover images from fixed to scroll
  * (iOS devices seem to have trouble with fixed, cover images) */

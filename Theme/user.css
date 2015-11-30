@@ -196,7 +196,8 @@ input[type="submitButton"],
 .commonMessageBox .buttons input.button,
 .WaGadgetEventsStateDetails .boxOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton,
 .WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton,
-.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton {
+.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton,
+.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton {
   background: #efefef;
   border-radius: 10px;
   border-color: #303030;
@@ -221,7 +222,9 @@ input[type="submitButton"]:active,
 .WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:hover, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:hover,
 .WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:active, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:active,
 .WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:hover,
-.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:active {
+.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:active,
+.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton:hover,
+.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton:active {
   background: #FF9600;
   color: #fff;
   transition: background-color 0.3s ease-in,

@@ -193,7 +193,10 @@ a:hover {
 input[type="button"],
 input[type="submit"],
 input[type="submitButton"],
-.commonMessageBox .buttons input.button {
+.commonMessageBox .buttons input.button,
+.WaGadgetEventsStateDetails .boxOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton,
+.WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton,
+.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton {
   background: #efefef;
   border-radius: 10px;
   border-color: #303030;
@@ -212,7 +215,13 @@ input[type="submit"]:active,
 input[type="submitButton"]:hover,
 input[type="submitButton"]:active,
 .commonMessageBox .buttons input.button:hover,
-.commonMessageBox .buttons input.button:active {
+.commonMessageBox .buttons input.button:active,
+.WaGadgetEventsStateDetails .boxOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:hover,
+.WaGadgetEventsStateDetails .boxOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:active,
+.WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:hover, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:hover,
+.WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:active, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton:active,
+.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:hover,
+.WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:active {
   background: #FF9600;
   color: #fff;
   transition: background-color 0.3s ease-in,
@@ -311,7 +320,7 @@ input[type="submitButton"]:active,
   border-color: #303030;
 }
 
-/* Table styles */
+/* Generic table styles */
 .genericListTable thead th,
 .membersTable thead th {
   background: #303030;
@@ -359,6 +368,93 @@ input[type="submitButton"]:active,
   vertical-align: middle;
   font-family: 'Fjalla One';
   font-size: 24px;
+}
+
+/* Event calendar styles */
+.WaGadgetEventsStateCalendar h3 {
+  font-size: 22px;
+  margin: 0px 20px 0px 0px;
+}
+
+.WaGadgetEventsStateCalendar .pageTitleOuterContainer {
+  margin-top: 0px;
+}
+
+.WaGadgetEventsStateCalendar #idViewSwitchersTable {
+  margin: 0px 0px 10px 0px;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar tr,
+.WaGadgetEventsStateCalendar .EventListCalendar td {
+  border: 0px !important;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar td.EventListCalendarHeader,
+.WaGadgetEventsStateCalendar .EventListCalendar .EventListCalendarHeader .calendarDate {
+  background: #303030;
+  color: #FF9600;
+  font-family: 'Fjalla One';
+  font-size: 18px;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar .yearViewHeader {
+  background: #303030;
+  color: #FF9600;
+  font-family: 'Fjalla One';
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar td.EventListCalendarHeader:first-child,
+.WaGadgetEventsStateCalendar .EventListCalendar td.EventListCalendarItemDefault:nth-child(2) a {
+  border-top-left-radius: 10px;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar td.EventListCalendarHeader:last-child,
+.WaGadgetEventsStateCalendar .EventListCalendar td.EventListCalendarItemDefault:last-child a {
+  border-top-right-radius: 10px;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar td > div {
+  background: #303030;
+  color: #FF9600;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar td > div:hover {
+  background: #FF9600;
+  color: #fff;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+.WaGadgetEventsStateCalendar .EventListCalendar a.eventHover {
+  text-decoration: none !important;
+}
+
+.WaGadgetEventsStateList ul.boxesList li.boxesListItem {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.WaGadgetEventsStateDetails .pageTitleOuterContainer .pageTitleContainer {
+  margin-bottom: 10px;
+}
+
+.WaGadgetEventsStateDetails .pageTitleOuterContainer .pageTitleContainer h1.pageTitle,
+.WaGadgetEventsStateList .boxOuterContainer .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle a {
+  font-family: "Fjalla One";
+  font-size: 28px;
+}
+
+/* For some reason they display "upcoming events" on top of the
+ * page when viewing a specific event. This hides it*/
+.WaGadgetUpcomingEvents.WaGadgetFirst {
+  display: none;
+}
+
+.WaGadgetEventsStateDetails .pageTitleOuterContainer .pageBackContainer,
+.WaGadgetEventsStateDetails .pageTitleOuterContainer .pageViewSwitcherOuterContainer {
+  margin-bottom: 10px;
 }
 
 /* For all mobile devices, change cover images from fixed to scroll

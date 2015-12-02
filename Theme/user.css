@@ -48,6 +48,16 @@
   background: #fafafa;
 }
 
+.zoneFooter3 {
+  color: #e6e6e6;
+  padding-bottom: 20px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One' !important;
+}
+
 /* Links */
 
 a, a:visited {
@@ -98,13 +108,45 @@ a:hover {
   display: none;
 }
 
+.member-dash-link-container,
+.member-menu-container {
+  vertical-align: middle;
+  display: none;
+}
+
+.memberContentView .member-dash-link-container,
+.memberContentView .member-menu-container {
+  display: table-cell;
+}
+
+.member-menu-container .member-menu {
+  margin-left: 10px;
+  padding: 5px 7px;
+  border: 1px solid #efefef;
+  border-radius:7px;
+  color: #efefef;
+  cursor:pointer;
+}
+
 .WaGadgetLoginButton {
   display: inline-block;
   float: right;
 }
 
+.memberContentView .WaGadgetLoginButton {
+  display: none;
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  background: #1f1f1f;
+  padding: 5px 0px 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 55px;
+}
+
 .memberContentView .WaGadgetLoginButton a {
   color: #fff;
+  display: block;
 }
 
 .memberContentView .WaGadgetLoginButton a:hover {
@@ -351,6 +393,7 @@ input[type="submitButton"]:active,
 /* Member Dashboard styles */
 .members-only-container .WaLayoutItem {
   vertical-align: middle;
+  padding: 0 10px;
 }
 
 .members-only-link a {
@@ -379,6 +422,7 @@ input[type="submitButton"]:active,
   margin: 0px 20px 0px 0px;
 }
 
+.WaGadgetEventsStateList .pageTitleOuterContainer,
 .WaGadgetEventsStateCalendar .pageTitleOuterContainer {
   margin-top: 0px;
 }
@@ -444,6 +488,7 @@ input[type="submitButton"]:active,
 }
 
 .WaGadgetEventsStateDetails .pageTitleOuterContainer .pageTitleContainer h1.pageTitle,
+.WaGadgetEventsStateList h3.sectionTitle,
 .WaGadgetEventsStateList .boxOuterContainer .boxHeaderOuterContainer .boxHeaderContainer h4.boxHeaderTitle a {
   font-family: "Fjalla One";
   font-size: 28px;
@@ -458,6 +503,15 @@ input[type="submitButton"]:active,
 .WaGadgetEventsStateDetails .pageTitleOuterContainer .pageBackContainer,
 .WaGadgetEventsStateDetails .pageTitleOuterContainer .pageViewSwitcherOuterContainer {
   margin-bottom: 10px;
+}
+
+/* Sponsor grid styles */
+.sponsor-grid {
+  padding: 30px;
+}
+
+.sponsor-grid .WaLayoutTable .WaLayoutItem {
+  padding: 0px 20px;
 }
 
 /* For all mobile devices, change cover images from fixed to scroll

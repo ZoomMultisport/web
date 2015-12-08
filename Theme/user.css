@@ -93,33 +93,54 @@ a:hover {
   height: 100%;
 }
 
+/* Header styles: home and standard template */
 .home-header {
   position: absolute;
-  top: 25px;
+  top: 15px;
   width: 100%;
 }
 
+.standard-header {
+  padding-top: 10px;
+}
+
+/* Join button */
 .join-button {
   display: inline-block;
   float: right;
 }
 
+/* Join button: hidden when user is logged in */
 .memberContentView .join-button {
   display: none;
 }
 
-.member-dash-link-container,
-.member-menu-container {
-  vertical-align: middle;
+/* Members-only nav links */
+
+.members-only-nav {
   display: none;
+  float: right;
 }
 
-.memberContentView .member-dash-link-container,
-.memberContentView .member-menu-container {
+.memberContentView .members-only-nav {
+  display: table;
+}
+
+.members-only-nav {
+  margin-top: 10px;
+}
+
+.members-only-nav .member-dash-link,
+.members-only-nav .member-menu-container {
   display: table-cell;
+  vertical-align: middle;
 }
 
-.member-menu-container .member-menu {
+.members-only-nav .member-dash-link img {
+  height: 75px;
+}
+
+.members-only-nav .member-menu-container .member-menu {
   margin-left: 10px;
   padding: 5px 7px;
   border: 1px solid #efefef;
@@ -142,6 +163,11 @@ a:hover {
   position: absolute;
   right: 0;
   top: 55px;
+  z-index: 1;
+}
+
+.memberContentView .standard-header .WaGadgetLoginButton {
+  top: 80px;
 }
 
 .memberContentView .WaGadgetLoginButton a {
@@ -185,6 +211,16 @@ a:hover {
 .home-text-overlay [class^="WaGadget"],
 .home-quote [class^="WaGadget"] {
   margin: 0px;
+}
+
+/* (position change on homepage) */
+.home-header .WaGadgetLoginButton,
+.home-header .join-button {
+  margin-top: 10px;
+}
+
+.home-header .members-only-nav {
+  margin-top: -10px;
 }
 
 .home-cover-img {
@@ -391,6 +427,7 @@ input[type="submitButton"]:active,
 }
 
 /* Member Dashboard styles */
+
 .members-only-container .WaLayoutItem {
   vertical-align: middle;
   padding: 0 10px;
@@ -524,14 +561,20 @@ input[type="submitButton"]:active,
 
 /*
  * Override of a media tag for the theme which forces the header table on the
- * home page to continue to be a full-width collection of inline-block elements.
+ * home and standard pages to continue to be a full-width collection of
+ * inline-block elements.
  */
 @media only screen and (max-width: 616px) {
   .home-header .WaLayoutTable .WaLayoutRow .WaLayoutItem {
     display: inline-block;
     width: 33% !important;
   }
-  .home-header .WaLayoutTable .WaLayoutRow .WaLayoutItem ~ .WaLayoutItem {
+  .standard-header .WaLayoutTable .WaLayoutRow .WaLayoutItem {
+    display: inline-block;
+    width: 50% !important;
+  }
+  .home-header .WaLayoutTable .WaLayoutRow .WaLayoutItem ~ .WaLayoutItem,
+  .standard-header .WaLayoutTable .WaLayoutRow .WaLayoutItem ~ .WaLayoutItem {
     margin-top: 0px;
   }
 }
@@ -610,4 +653,14 @@ input[type="submitButton"]:active,
   .zoneHeader4 .home-cover-img {
     min-height: 1200px;
   }
+
+  /* Members-only nav */
+  .home-header .members-only-nav {
+    margin-top: 0px;
+  }
+
+  .members-only-nav .member-dash-link img {
+    height: 65px;
+  }
+
 }

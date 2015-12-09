@@ -273,7 +273,8 @@ input[type="submitButton"],
 .WaGadgetEventsStateDetails .boxOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton,
 .WaGadgetEventsStateRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton, .WaGadgetEventsStateSelfRegistrationsList .generalFormOuterContainer .titleOuterContainer .generalFormContainer .titleRightContainer .generalFormOuterContainer .generalFormContainer input.typeButton,
 .WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton,
-.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton {
+.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton,
+.WaGadgetAuthorizationRequired .loginPageTable #idSubmitBox #idLoginButtonBox span input.loginButton {
   background: #efefef;
   border-radius: 10px;
   border-color: #303030;
@@ -300,7 +301,9 @@ input[type="submitButton"]:active,
 .WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:hover,
 .WaGadgetEventsStateList .boxOuterContainer .boxBodyOuterContainer .boxBodyContainer .boxBodyInfoOuterContainer .boxBodyInfoContainer .boxActionContainer input.typeButton:active,
 .WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton:hover,
-.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton:active {
+.WaGadgetContactProfile .topButtonsOuterContainer .inner input.typeButton:active,
+.WaGadgetAuthorizationRequired .loginPageTable #idSubmitBox #idLoginButtonBox span input.loginButton:hover,
+.WaGadgetAuthorizationRequired .loginPageTable #idSubmitBox #idLoginButtonBox span input.loginButton:active {
   background: #FF9600;
   color: #fff;
   transition: background-color 0.3s ease-in,

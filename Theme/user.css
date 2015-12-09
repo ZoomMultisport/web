@@ -213,9 +213,7 @@ a:hover {
   margin: 0px;
 }
 
-/* (position change on homepage) */
-.home-header .WaGadgetLoginButton,
-.home-header .join-button {
+.home-header .WaGadgetLoginButton {
   margin-top: 10px;
 }
 

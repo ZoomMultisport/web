@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One' !important;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 /* Links */
 
 a, a:visited {
@@ -108,6 +112,24 @@ a:hover {
 .join-button {
   display: inline-block;
   float: right;
+}
+
+.sponsor-scroller {
+  padding: 10px 0px;
+}
+
+.sponsor-scroller .gadgetStyleBody p {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.sponsor-scroller .gadgetStyleBody p img {
+  height: 80px !important;
+  width: auto !important;
+}
+
+.sponsor-scroller .gadgetStyleBody p img {
+  padding: 0px 10px;
 }
 
 /* Join button: hidden when user is logged in */
@@ -452,6 +474,11 @@ input[type="submitButton"]:active,
   vertical-align: middle;
   font-family: 'Fjalla One';
   font-size: 24px;
+}
+
+/* Member profile page */
+#memberPhotoGalleryShowLink {
+  display: none;
 }
 
 /* Event calendar styles */

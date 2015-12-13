@@ -14,4 +14,18 @@ $(document).ready(function() {
     }
   });
 
+  /** Scroller for sponser list on home page */
+  var $sponsorScroller = $('.sponsor-scroller .gadgetStyleBody p');
+  $sponsorScroller.animate(
+    { scrollLeft: $sponsorScroller.width() },
+    { duration: 10000 }
+  );
+  $('body').on('mousewheel', $sponsorScroller, function(e) {
+    if(e.target.closest('.sponsor-scroller')
+      && e.originalEvent.wheelDeltaX
+      && e.originalEvent.wheelDeltaX != 0) {
+        $sponsorScroller.stop();
+    }
+  });
+
 });

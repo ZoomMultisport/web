@@ -600,6 +600,11 @@ input.loginButton:active {
   padding: 30px;
 }
 
+.sponsor-grid .WaLayoutTable .WaLayoutTable {
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #666;
+}
+
 .sponsor-grid .WaLayoutTable .WaLayoutItem {
   padding: 0px 20px;
 }
@@ -714,6 +719,18 @@ input.loginButton:active {
 
   .members-only-nav .member-dash-link img {
     height: 65px;
+  }
+
+  /* Sponsor grid */
+  .sponsor-grid .WaLayoutTable .WaLayoutTable {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+  }
+
+  .sponsor-grid .WaLayoutTable .WaLayoutItem {
+    padding: 20px 0 50px;
+    border-bottom: 1px dashed #666;
+    text-align: center;
   }
 
 }

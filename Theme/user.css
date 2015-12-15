@@ -243,8 +243,8 @@ input.loginButton:active {
 
 .members-only-nav .member-menu-container .member-menu:hover {
   border: 1px solid #cecece;
-  color: #FF9600;
-  background-color: #FFF;
+  color: #FFF;
+  background-color: #FF9600;
   opacity: 1;
 }
 
@@ -264,8 +264,8 @@ input.loginButton:active {
 
 .WaGadgetLoginButton .loginBoxLinkContainer .loginBoxLinkButton:hover {
   border: 1px solid #cecece;
-  color: #FF9600;
-  background-color: #FFF;
+  color: #FFF;
+  background-color: #FF9600;
   opacity: 1;
 }
 
@@ -292,7 +292,7 @@ input.loginButton:active {
 
 .memberContentView .WaGadgetLoginButton a:hover {
   text-decoration: none;
-  color: #FD8208;
+  color: #FF9600;
   transition: color 0.2s ease-out;
 }
 
@@ -383,7 +383,7 @@ input.loginButton:active {
   display: inline-block;
   width: 200px;
   padding: 8px;
-  color: #fff;
+  color: #fff !important;
   font-family: 'Fjalla One';
   font-size: 36px;
   border: 2px solid #fff;
@@ -396,7 +396,7 @@ input.loginButton:active {
 
 .learn-more-button:hover, .learn-more-button:active {
   background-color: #fff;
-  color: #FD8208;
+  color: #FF9600 !important;
   text-decoration: none;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }

@@ -451,33 +451,45 @@ input.loginButton:active {
 
 /* Generic table styles */
 .genericListTable thead th,
-.membersTable thead th {
-  background: #303030;
-  color: #FF9600;
-  font-family: 'Fjalla One';
+.membersTable thead th,
+.WaGadgetForumStateList .boxHeaderOuterContainer table td,
+.WaGadgetForum .boxHeaderOuterContainer table td {
+  background: #303030 !important;
+  color: #FF9600 !important;
+  font-family: 'Fjalla One' !important;
+}
+
+.WaGadgetForumStateList .boxHeaderOuterContainer table td h4,
+.WaGadgetForum .boxHeaderOuterContainer h4 {
+  color: #FF9600 !important;
 }
 
 .genericListTable tr:hover td,
-.membersTable tr:hover td {
-  background: #efefef;
+.membersTable tr:hover td,
+.WaGadgetForumStateList .boxBodyContainer tr:hover td,
+.WaGadgetForum .boxBodyContainer tr:hover td {
+  background: #efefef !important;
 }
 
 .genericListTable th.firstTh,
 .genericListTable thead th:first-child,
-.membersTable thead th:first-child {
-  border-top-left-radius: 10px;
+.membersTable thead th:first-child,
+.WaGadgetForumStateList .forumListContainer .boxHeaderOuterContainer table td:first-child,
+.WaGadgetForum .boxHeaderOuterContainer table td:first-child {
+  border-top-left-radius: 10px !important;
 }
 
 .genericListTable th.lastTh,
 .genericListTable thead th.right,
-.membersTable thead th.right {
-  border-top-right-radius: 10px;
+.membersTable thead th.right,
+.WaGadgetForumStateList .forumListContainer .boxHeaderOuterContainer table td:last-child,
+.WaGadgetForum .boxHeaderOuterContainer table td:last-child {
+  border-top-right-radius: 10px !important;
 }
 
 /* Member Dashboard styles */
 
 .members-only-container .WaLayoutItem {
-  vertical-align: middle;
   padding: 0 10px;
 }
 

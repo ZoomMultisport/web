@@ -38,19 +38,24 @@
   background: none;
 }
 
-/* Dark gray background for the header and footer.*/
-.zoneHeader1, .zoneFooter3 {
+/* Dark gray background for the header */
+.zoneHeader1 {
   background: #303030;
+}
+
+/* Black argyle background for the footer */
+.zoneFooter3 {
+  background-image: url('http://f.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-8.png');
+  color: #e6e6e6;
+}
+
+#idFooterPoweredByContainer {
+  padding: 0 3px;
 }
 
 /* Light gray background for content */
 .zoneContent {
   background: #fafafa;
-}
-
-.zoneFooter3 {
-  color: #e6e6e6;
-  padding-bottom: 20px;
 }
 
 /* Headers */
@@ -378,27 +383,85 @@ input.loginButton:active {
   margin: 0px;
 }
 
-/* Homepage learn more button */
-.learn-more-button {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #fff !important;
-  font-family: 'Fjalla One';
-  font-size: 36px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+/* Homepage chat bubbles */
+.chat-bubble-left {
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #303030;
 }
 
-.learn-more-button:hover, .learn-more-button:active {
-  background-color: #fff;
-  color: #FF9600 !important;
-  text-decoration: none;
+.chat-bubble-left .gadgetStyleBody {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 15px;
+  border: solid 2px #999;
+}
+
+.chat-bubble-left .gadgetStyleBody:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 28px 8px 0;
+  border-color: transparent #999;
+  display: block;
+  width: 0;
+  z-index: 0;
+  left: -29px;
+  bottom: 15%;
+}
+
+.chat-bubble-right {
+  padding: 0 30px;
+  font-size: 18px;
+  color: #FF9600;
+  text-align: right;
+}
+
+.chat-bubble-right .gadgetStyleBody {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 15px;
+  border: solid 2px #FF9600;
+}
+
+.chat-bubble-right .gadgetStyleBody:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 0 8px 28px;
+  border-color: transparent #FF9600;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -29px;
+  bottom: 10%;
+}
+
+
+/* Homepage sign-me-up button */
+.sign-me-up  .gadgetStyleBody:hover, .sign-me-up  .gadgetStyleBody:active {
+  background-color: #FF9600;
+  color: #fff !important;
+  border-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.sign-me-up  .gadgetStyleBody:hover a, .sign-me-up  .gadgetStyleBody:active a {
+  color: #fff;
+  display: block;
+  transition: color 0.3s ease-in;  
+}
+
+.sign-me-up  .gadgetStyleBody:hover:before, .sign-me-up  .gadgetStyleBody:active:before {
+  border-color: transparent #fff;
+  transition: border-color 0.3s ease-in;
 }
 
 .navigationTopContainer {

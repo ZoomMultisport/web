@@ -25,6 +25,11 @@
   margin: 0;
 }
 
+/* Black argyle background for the body */
+body {
+  background: url('http://f.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-8.png');
+}
+
 /* Remove theme's place holder padding */
 .WaPlaceHolder > div {
   padding: 0;
@@ -38,19 +43,15 @@
   background: none;
 }
 
-/* Dark gray background for the header */
-.zoneHeader1 {
-  background: #303030;
-}
-
-/* Black argyle background for the footer */
+/* Footer color and padding */
 .zoneFooter3 {
-  background-image: url('http://f.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-8.png');
   color: #e6e6e6;
 }
 
+/* "Powered by Wild Apricot" text */
 #idFooterPoweredByContainer {
-  padding: 0 3px;
+  width: auto;
+  padding: 20px;
 }
 
 /* Light gray background for content */
@@ -456,7 +457,7 @@ input.loginButton:active {
 .sign-me-up  .gadgetStyleBody:hover a, .sign-me-up  .gadgetStyleBody:active a {
   color: #fff;
   display: block;
-  transition: color 0.3s ease-in;  
+  transition: color 0.3s ease-in;
 }
 
 .sign-me-up  .gadgetStyleBody:hover:before, .sign-me-up  .gadgetStyleBody:active:before {

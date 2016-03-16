@@ -384,6 +384,21 @@ input.loginButton:active {
   margin: 0px;
 }
 
+/* Newsletter sign-up */
+#mc_embed_signup {
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#mc_embed_signup .indicates-required {
+  float: right !important;
+}
+
+#mc_embed_signup .mc-field-group {
+  width: 96% !important;
+}
+
+
 /* Homepage chat bubbles */
 .chat-bubble-left {
   padding: 0 30px;

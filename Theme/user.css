@@ -460,6 +460,27 @@ input.loginButton:active {
   bottom: 10%;
 }
 
+/* Leadership page */
+.board-member {
+  text-align: center;
+  display: inline-block;
+  margin: 0px;
+}
+
+.board-member img {
+  border-radius: 5px;
+}
+
+.board-member .member-name {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.board-member .member-title {
+  display: block;
+  font-style: italic;
+}
 
 /* Homepage sign-me-up button */
 .sign-me-up  .gadgetStyleBody:hover, .sign-me-up  .gadgetStyleBody:active {

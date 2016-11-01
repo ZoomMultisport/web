@@ -465,6 +465,7 @@ input.loginButton:active {
   text-align: center;
   display: inline-block;
   margin: 0px;
+  margin-right: 20px;
 }
 
 .board-member img {

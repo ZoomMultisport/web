@@ -27,7 +27,7 @@
 
 /* Black argyle background for the body */
 body {
-  background: url('http://f.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-8.png');
+  background: url('https://f.wildapricot.org/ThemeSharedRes/HeaderBackgroundImages/Bg-pattern-8.png');
 }
 
 /* Remove theme's place holder padding */
@@ -728,6 +728,8 @@ input.loginButton:active {
   .home-cover-img {
     background-attachment: scroll;
   }
+
+  #zoom-strava-widget { display:none; }
 }
 
 /*

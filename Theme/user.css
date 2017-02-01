@@ -205,6 +205,21 @@ input.loginButton:active {
   display: none;
 }
 
+#best-of-logo {
+  top: 100px;
+  left: 10%;
+  width: 30%;
+  max-width: 200px;
+  -ms-transform: rotate(-13deg);
+  -webkit-transform: rotate(-13deg);
+  transform: rotate(-13deg);
+}
+
+#best-of-logo img {
+  height: auto;
+  width: 100%;
+}
+
 /* Members-only nav links */
 
 .members-only-nav {
@@ -728,8 +743,6 @@ input.loginButton:active {
   .home-cover-img {
     background-attachment: scroll;
   }
-
-  #zoom-strava-widget { display:none; }
 }
 
 /*
